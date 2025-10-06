@@ -9,7 +9,7 @@ closeMenu.addEventListener("click", () => {
 });
 
 
-function splitLettersKeepWords(element) {
+/* function splitLettersKeepWords(element) {
   const text = element.textContent.replace(/\s+/g, " ").trim();
   element.textContent = "";
 
@@ -91,4 +91,4 @@ window.addEventListener("load", () => {
     delay: 3,
     ease: "power1.out",
   });
-});
+}); */
