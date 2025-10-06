@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body
+    class="bg-[url('../assets/technology/background-technology-mobile.jpg')] md:bg-[url('../assets/technology/background-technology-tablet.jpg')] lg:bg-[url('../assets/technology/background-technology-desktop.jpg')] bg-cover bg-no-repeat bg-center min-h-[100dvh] font-barlow-condensed flex flex-col"
+  >
+    <header class="flex items-center justify-between py-6 md:p-0 lg:pt-10">
+      <div
+        class="flex items-center pl-6 md:pl-10 xl:pl-16 lg:gap-10 xl:gap-16 w-1/2 lg:w-[calc(50%+16px)] lg:-mr-8"
+      >
+        <a href="index.html">
+          <img
+            src="./assets/shared/logo.svg"
+            alt="Space Tourism Logo"
+            class="size-10 md:size-12"
+        /></a>
+        <span
+          class="hidden lg:flex flex-1 h-[1px] bg-white opacity-25 z-10"
+        ></span>
+      </div>
+      <div class="w-1/2 pr-6 flex justify-end md:hidden">
+        <svg
+          id="openMenu"
+          class="cursor-pointer"
+          aria-label="Open Navigation Menu"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="21"
+        >
+          <g fill="#D0D6F9" fill-rule="evenodd">
+            <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+          </g>
+        </svg>
+      </div>
+      <nav
+        id="navMenu"
+        class="fixed md:static top-0 left-full z-10 w-[68%] h-full md:size-auto pl-8 flex flex-col gap-12 md:flex-row md:justify-end bg-blue-900/15 md:bg-white/5 backdrop-blur-[80px] text-white uppercase md:px-10 xl:px-16 lg:w-[calc(50%+16px)] transition-transform duration-300"
+      >
+        <div class="flex justify-end py-8 md:hidden">
+          <svg
+            id="closeMenu"
+            class="mr-6 cursor-pointer"
+            aria-label="Close Navigation Menu"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="21"
+          >
+            <g fill="#D0D6F9" fill-rule="evenodd">
+              <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z" />
+              <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z" />
+            </g>
+          </svg>
+        </div>
+        <ul
+          id="links"
+          class="flex flex-col md:flex-row gap-12 lg:gap-5 xl:gap-12"
+        >
+          <li>
+            <a
+              href="index.html"
+              class="link md:border-r-0 md:border-b-[3px] border-b-transparent hover:border-b-white/50 md:h-24"
+              ><span class="font-bold tracking-[2.7px]">00</span>Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="destination-moon.html"
+              class="link md:border-r-0 md:border-b-[3px] border-b-transparent hover:border-b-white/50 md:h-24"
+              ><span class="font-bold tracking-[2.7px]">01</span>Destination</a
+            >
+          </li>
+          <li>
+            <a
+              href="crew-commander.html"
+              class="link md:border-r-0 md:border-b-[3px] border-b-transparent hover:border-b-white/50 md:h-24"
+              ><span class="font-bold tracking-[2.7px]">02</span>Crew</a
+            >
+          </li>
+          <li>
+            <a
+              href="technology-vehicle.html"
+              class="link md:border-r-0 md:border-b-[3px] md:h-24 border-white"
+              ><span class="font-bold tracking-[2.7px]">03</span>Technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex flex-1 px-6 pt-6 pb-12 md:p-10 lg:py-12 lg:pr-0 xl:pb-10">
+      <div class="flex flex-col gap-6 w-full xl:pl-20">
+        <div class="flex justify-center w-full md:justify-start">
+          <h1
+            id="heading"
+            class="flex gap-6 leading-[normal] tracking-[2.4px] text-white uppercase md:text-[20px] lg:text-[28px] lg:tracking-[4px]"
+          >
+            <span class="font-bold text-white/25">03</span>Space launch 101
+          </h1>
+        </div>
+        <div
+          class="flex flex-col flex-1 gap-8 lg:flex-row-reverse xl:justify-between"
+        >
+          <div
+            class="pt-16 relative -mx-6 md:-mx-10 lg:mx-0 lg:p-0 lg:max-w-[445px] xl:min-w-[450px]"
+          >
+            <picture>
+              <source
+                media="(min-width:1024px)"
+                srcset="../assets/technology/technology-image-capsule-d.jpg"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="../assets/technology/technology-image-capsule-t.jpg"
+              />
+              <img
+                id="img"
+                src="../assets/technology/technology-image-capsule.jpg"
+                alt="Launch Vehicle"
+                class="size-full object-cover"
+              />
+            </picture>
+          </div>
+          <div
+          id="content"
+            class="flex flex-col gap-10 xl:gap-16 lg:flex-row lg:items-center"
+          >
+            <ul class="flex justify-center gap-4 lg:flex-col lg:gap-8">
+              <li>
+                <a
+                  href="technology-vehicle.html"
+                  class="technology md:size-[56px] xl:size-[80px]"
+                  >1</a
+                >
+              </li>
+              <li>
+                <a
+                  href="technology-spaceport.html"
+                  class="technology md:size-[56px] xl:size-[80px]"
+                  >2</a
+                >
+              </li>
+              <li>
+                <a
+                  href="technology-capsule.html"
+                  class="technology md:size-[56px] xl:size-[80px] bg-white text-blue-900"
+                  >3</a
+                >
+              </li>
+            </ul>
+            <div class="flex flex-col gap-4 md:w-[512px] md:mx-auto lg:gap-6">
+              <div
+                class="flex flex-col gap-4 text-center uppercase font-bellefair leading-[normal] lg:text-left"
+              >
+                <h2
+                  class="text-white/50 text-[18px] md:text-[24px] xl:text-[32px]"
+                >
+                  The terminology...
+                </h2>
+                <h3
+                  class="text-[24px] text-white md:text-[40px] xl:text-[56px]"
+                >
+                  Space capsule
+                </h3>
+              </div>
+              <p
+                class="font-barlow text-[15px] leading-[180%] text-blue-300 text-center md:text-[16px] lg:text-left xl:text-[18px]"
+              >
+                A space capsule is an often-crewed spacecraft that uses a
+                blunt-body reentry capsule to reenter the Earth's atmosphere
+                without wings. Our capsule is where you'll spend your time
+                during the flight. It includes a space gym, cinema, and plenty
+                of other activities to keep you entertained.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script type="module" src="src/technology.js"></script>
+  </body>
+</html>
