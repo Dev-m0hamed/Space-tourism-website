@@ -1,0 +1,1 @@
+import"./style-CZRqCzvU.js";const n=document.getElementById("openMenu");document.getElementById("closeMenu");const e=document.getElementById("navMenu");n.addEventListener("click",()=>{e.classList.add("-translate-x-full")});closeMenu.addEventListener("click",()=>{e.classList.remove("-translate-x-full")});
