@@ -1,5 +1,9 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import mobile from "../../assets/technology/background-technology-mobile.jpg";
+import tablet from "../../assets/technology/background-technology-tablet.jpg";
+import desktop from "../../assets/technology/background-technology-desktop.jpg";
+import ResponsiveBg from "../../hooks/ResponsiveBg";
 import Header from "../../components/Header";
 import technology from "./TechData";
 
@@ -7,7 +11,12 @@ function Technology() {
   const [current, setCurrent] = useState(0);
   const tech = technology[current];
   return (
-    <div className="tech-bg">
+    <div
+      className="bg"
+      style={{
+        backgroundImage: `url(${ResponsiveBg(mobile, tablet, desktop)})`,
+      }}
+    >
       <Header />
       <main className="flex flex-1 px-6 pt-6 pb-12 md:p-10 lg:py-12 lg:pr-0 xl:pb-10">
         <section className="flex flex-col gap-6 w-full xl:pl-20">

@@ -1,5 +1,9 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import mobile from "../../assets/crew/background-crew-mobile.jpg";
+import tablet from "../../assets/crew/background-crew-tablet.jpg";
+import desktop from "../../assets/crew/background-crew-desktop.jpg";
+import ResponsiveBg from "../../hooks/ResponsiveBg";
 import Header from "../../components/Header";
 import crew from "./CrewData";
 
@@ -7,7 +11,12 @@ function Crew() {
   const [current, setCurrent] = useState(0);
   const member = crew[current];
   return (
-    <div className="crew-bg">
+    <div
+      className="bg"
+      style={{
+        backgroundImage: `url(${ResponsiveBg(mobile, tablet, desktop)})`,
+      }}
+    >
       <Header />
       <main className="flex flex-1 p-6 md:p-10 md:overflow-hidden lg:pt-12 lg:pb-0">
         <section className="flex flex-col gap-6 flex-1 xl:max-w-[1110px] xl:mx-auto">

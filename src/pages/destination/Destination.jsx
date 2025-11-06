@@ -1,5 +1,9 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import mobile from "../../assets/destination/background-destination-mobile.jpg";
+import tablet from "../../assets/destination/background-destination-tablet.jpg";
+import desktop from "../../assets/destination/background-destination-desktop.jpg";
+import ResponsiveBg from "../../hooks/ResponsiveBg";
 import Header from "../../components/Header";
 import destinations from "./data";
 
@@ -8,7 +12,12 @@ function Destination() {
   const planet = destinations[current];
 
   return (
-    <div className="destination-bg">
+    <div
+      className="bg"
+      style={{
+        backgroundImage: `url(${ResponsiveBg(mobile, tablet, desktop)})`,
+      }}
+    >
       <Header />
       <main className="p-6 md:p-10 lg:p-0 lg:pt-12 lg:flex lg:flex-1">
         <section className="flex flex-col items-center gap-6 lg:gap-[35px] lg:flex-1">

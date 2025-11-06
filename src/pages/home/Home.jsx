@@ -1,10 +1,19 @@
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
+import mobile from "../../assets/home/background-home-mobile.jpg";
+import tablet from "../../assets/home/background-home-tablet.jpg";
+import desktop from "../../assets/home/background-home-desktop.jpg";
+import ResponsiveBg from "../../hooks/ResponsiveBg";
 import Header from "../../components/Header";
 
 function Home() {
   return (
-    <div className="home-bg">
+    <div
+      className="bg"
+      style={{
+        backgroundImage: `url(${ResponsiveBg(mobile, tablet, desktop)})`,
+      }}
+    >
       <Header />
       <main className="flex flex-1 p-6 md:px-10 md:py-32 lg:px-0 hero">
         <section className="flex flex-col items-center justify-between flex-1 md:gap-16 md:max-w-lg lg:max-w-[1110px] lg:flex-row lg:gap-0 mx-auto">
