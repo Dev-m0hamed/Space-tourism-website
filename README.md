@@ -31,7 +31,7 @@ Users should be able to:
 
 ## 💻 Live Demo
 
-👉 [View Live](https://space-tourism-website-brown-zeta.vercel.app/)
+👉 [View Live](https://space-tourism-website-ashy-six.vercel.app/)
 
 ---
 
